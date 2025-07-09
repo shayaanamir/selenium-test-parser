@@ -1,0 +1,1498 @@
+{
+  "summary" : {
+    "totalTestCases" : 42,
+    "totalPageObjects" : 19,
+    "totalSteps" : 188,
+    "actionTypeCounts" : {
+      "navigate" : 96,
+      "select" : 4,
+      "verify" : 40,
+      "type" : 18,
+      "click" : 30
+    }
+  },
+  "testCases" : [ {
+    "testName" : "executeTestCase",
+    "className" : "Test_FlipkartSite",
+    "description" : "This method executes test cases based on the provided test data.",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    } ]
+  }, {
+    "testName" : "getFlipkartSite",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Launching Flipkart Site",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: URL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "URL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: currentURL",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "currentURL"
+    } ]
+  }, {
+    "testName" : "clickOnProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case for clicking a product on Homepage",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isProductClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isProductClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "searchProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for searching a product on search-box",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\") with value: product",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : "product"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify with value: isProductClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isProductClicked"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "changingPinCode",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for changing Pincode",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\") with value: pincode",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "value" : "pincode"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkProductImages",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for chechking product images",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: productLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "productLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isSeen",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isSeen"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "addToCart",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to Add Product to cart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "placeOrder",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to place order",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "sortProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to sort product based on price",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: filterLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "filterLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyPriceFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply price filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyBrandFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply brand filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyRatingFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply rating filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyBatteryCapacityFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply Battery Capacity filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Select on element: By.xpath(\"//div[text()='3000 - 3999 mAh']/preceding-sibling::div\")",
+      "actionType" : "select",
+      "elementSelector" : "By.xpath(\"//div[text()='3000 - 3999 mAh']/preceding-sibling::div\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkMenApparel",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Men jackets products",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkFurniture",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check furniture products",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkOfferZone",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Offer-Zone Section",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Click on element: By.xpath(\"(//img[@alt=\\\"ADIDAS SUPERNOVA 2 W Running Shoes For Women\\\"])\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//img[@alt=\\\"ADIDAS SUPERNOVA 2 W Running Shoes For Women\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkGrocerySection",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Grocery Store of Flipkart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: groceryLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "groceryLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkMyCart",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check my Cart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkFlights",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Flight Booking Section",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: URL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "URL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate on element: By.css(\"div._98hP1j span\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.css(\"div._98hP1j span\")",
+      "value" : null
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Type with value: departureCity",
+      "actionType" : "type",
+      "elementSelector" : null,
+      "value" : "departureCity"
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Select on element: By.css(\"div._98hP1j span\") with value: city",
+      "actionType" : "select",
+      "elementSelector" : "By.css(\"div._98hP1j span\")",
+      "value" : "city"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Type on element: By.css(\"input[name='0-arrivalcity']\") with value: arrivalCity",
+      "actionType" : "type",
+      "elementSelector" : "By.css(\"input[name='0-arrivalcity']\")",
+      "value" : "arrivalCity"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "registerUser",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Register functionality",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: registerLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "registerLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Type with value: PhoneNo",
+      "actionType" : "type",
+      "elementSelector" : null,
+      "value" : "PhoneNo"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Type on element: By.xpath(\"//div[@class=\\\"XDRRi5\\\"]\")",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//div[@class=\\\"XDRRi5\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Click on element: By.xpath(\"//div[text()=\\\"Sign Up\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//div[text()=\\\"Sign Up\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkLogin",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Login Functionality",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: loginURL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "loginURL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@type=\\\"text\\\"]\") with value: emailID",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : "emailID"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Type on element: By.xpath(\"//button[@type=\\\"button\\\"]\") with value: OTP",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : "OTP"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "executeTestCase",
+    "className" : "Test_FlipkartSite",
+    "description" : "This method executes test cases based on the provided test data.",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    } ]
+  }, {
+    "testName" : "getFlipkartSite",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Launching Flipkart Site",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: URL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "URL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: currentURL",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "currentURL"
+    } ]
+  }, {
+    "testName" : "clickOnProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case for clicking a product on Homepage",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isProductClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isProductClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "searchProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for searching a product on search-box",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\") with value: product",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : "product"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Click on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify with value: isProductClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isProductClicked"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "changingPinCode",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for changing Pincode",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\") with value: pincode",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")",
+      "value" : "pincode"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkProductImages",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for chechking product images",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: productLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "productLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isSeen",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isSeen"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "addToCart",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to Add Product to cart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "placeOrder",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to place order",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "sortProduct",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to sort product based on price",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: filterLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "filterLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyPriceFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply price filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyBrandFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply brand filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyRatingFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply rating filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "applyBatteryCapacityFilter",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to apply Battery Capacity filter",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Select on element: By.xpath(\"//div[text()='3000 - 3999 mAh']/preceding-sibling::div\")",
+      "actionType" : "select",
+      "elementSelector" : "By.xpath(\"//div[text()='3000 - 3999 mAh']/preceding-sibling::div\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkMenApparel",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Men jackets products",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkFurniture",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check furniture products",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkOfferZone",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Offer-Zone Section",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Click on element: By.xpath(\"(//img[@alt=\\\"ADIDAS SUPERNOVA 2 W Running Shoes For Women\\\"])\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"(//img[@alt=\\\"ADIDAS SUPERNOVA 2 W Running Shoes For Women\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkGrocerySection",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Grocery Store of Flipkart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: groceryLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "groceryLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkMyCart",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check my Cart",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+      "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "actualText.contains(expectedText)"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkFlights",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is to check Flight Booking Section",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: URL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "URL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Navigate on element: By.css(\"div._98hP1j span\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.css(\"div._98hP1j span\")",
+      "value" : null
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Type with value: departureCity",
+      "actionType" : "type",
+      "elementSelector" : null,
+      "value" : "departureCity"
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Select on element: By.css(\"div._98hP1j span\") with value: city",
+      "actionType" : "select",
+      "elementSelector" : "By.css(\"div._98hP1j span\")",
+      "value" : "city"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Type on element: By.css(\"input[name='0-arrivalcity']\") with value: arrivalCity",
+      "actionType" : "type",
+      "elementSelector" : "By.css(\"input[name='0-arrivalcity']\")",
+      "value" : "arrivalCity"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "registerUser",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Register functionality",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: registerLink",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "registerLink"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Type with value: PhoneNo",
+      "actionType" : "type",
+      "elementSelector" : null,
+      "value" : "PhoneNo"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Type on element: By.xpath(\"//div[@class=\\\"XDRRi5\\\"]\")",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//div[@class=\\\"XDRRi5\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Click on element: By.xpath(\"//div[text()=\\\"Sign Up\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//div[text()=\\\"Sign Up\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  }, {
+    "testName" : "checkLogin",
+    "className" : "Test_FlipkartSite",
+    "description" : "This test case is for Login Functionality",
+    "steps" : [ {
+      "stepNumber" : 1,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 2,
+      "stepDescription" : "Navigate with value: loginURL",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : "loginURL"
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "actionType" : "navigate",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Type on element: By.xpath(\"//input[@type=\\\"text\\\"]\") with value: emailID",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : "emailID"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "actionType" : "click",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : null
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Type on element: By.xpath(\"//button[@type=\\\"button\\\"]\") with value: OTP",
+      "actionType" : "type",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+      "value" : "OTP"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Verify with value: isClicked",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "isClicked"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Navigate",
+      "actionType" : "navigate",
+      "elementSelector" : null,
+      "value" : null
+    } ]
+  } ],
+  "pageObjects" : {
+    "FlipkartPriceFilters" : {
+      "className" : "FlipkartPriceFilters",
+      "elements" : {
+        "dropdown" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")"
+      }
+    },
+    "FlipkartFlightPage" : {
+      "className" : "FlipkartFlightPage",
+      "elements" : {
+        "searchButton" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
+        "cityOptions" : "By.css(\"div._98hP1j span\")",
+        "inputDepartCity" : "By.css(\"input[name='0-departcity']\")",
+        "inputArrivalCity" : "By.css(\"input[name='0-arrivalcity']\")"
+      }
+    },
+    "FlipkartCheckCart" : {
+      "className" : "FlipkartCheckCart",
+      "elements" : {
+        "heading" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
+        "cartButton" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")"
+      }
+    },
+    "FlipkartChangePincode" : {
+      "className" : "FlipkartChangePincode",
+      "elements" : {
+        "expectedText" : "By.xpath(\"//div[@class='hVvnXm']\")",
+        "pincodeBox" : "By.xpath(\"//input[@id=\\\"pincodeInputId\\\"]\")"
+      }
+    },
+    "FlipkartRatingFilters" : {
+      "className" : "FlipkartRatingFilters",
+      "elements" : {
+        "dropdown" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")"
+      }
+    },
+    "FlipkartPlaceOrder" : {
+      "className" : "FlipkartPlaceOrder",
+      "elements" : {
+        "emailBox" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+        "orderButton" : "By.xpath(\"//span[text()=\\\"Place Order\\\"]\")"
+      }
+    },
+    "FlipkartCheckProductImages" : {
+      "className" : "FlipkartCheckProductImages",
+      "elements" : {
+        "imageContainer" : "By.className(\"ZqtVYK\")"
+      }
+    },
+    "FlipkartOfferZonePage" : {
+      "className" : "FlipkartOfferZonePage",
+      "elements" : {
+        "offerZone" : "By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+        "heading" : "By.xpath(\"(//h1[text()=\\\"Sports Casual Shoes Women's Footwear\\\"])\")",
+        "sportsWear" : "By.xpath(\"(//img[@alt=\\\"ADIDAS SUPERNOVA 2 W Running Shoes For Women\\\"])\")"
+      }
+    },
+    "FlipkartSortFilter" : {
+      "className" : "FlipkartSortFilter",
+      "elements" : {
+        "lowToHigh" : "By.xpath(\"//div[text()='Price -- Low to High']\")"
+      }
+    },
+    "FlipkartBatteryFilter" : {
+      "className" : "FlipkartBatteryFilter",
+      "elements" : {
+        "batteryCapacityCheckbox" : "By.xpath(\"//div[text()='3000 - 3999 mAh']/preceding-sibling::div\")",
+        "batteryCapacity" : "By.xpath(\"//div[text()='Battery Capacity']/..\")"
+      }
+    },
+    "FlipkartMenApparel" : {
+      "className" : "FlipkartMenApparel",
+      "elements" : {
+        "heading" : "By.xpath(\"(//h1[text()=\\\"Men's Jackets\\\"])\")",
+        "men" : "By.xpath(\"//span[text()=\\\"Men\\\"]\")",
+        "jackets" : "By.xpath(\"//a[@title=\\\"Jackets\\\"]\")"
+      }
+    },
+    "FlipkartGroceryPage" : {
+      "className" : "FlipkartGroceryPage",
+      "elements" : {
+        "Grocery" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+        "heading" : "By.xpath(\"//h1[text()=\\\"Vermicelli\\\"]\")",
+        "noodles_pasta" : "By.xpath(\"//a[text()=\\\"Noodles & Pasta\\\"]\")",
+        "packagedFood" : "By.xpath(\"//div[text()=\\\"Packaged Food\\\"]\")",
+        "vermicelli" : "By.xpath(\"//a[text()=\\\"Vermicelli\\\"]\")"
+      }
+    },
+    "FlipkartClickProductHome" : {
+      "className" : "FlipkartClickProductHome",
+      "elements" : {
+        "HomeButton" : "By.xpath(\"(//img[@title=\\\"Flipkart\\\"])\")",
+        "productImg" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")"
+      }
+    },
+    "FlipkartLoginPage" : {
+      "className" : "FlipkartLoginPage",
+      "elements" : {
+        "OTP_Box" : "By.xpath(\"//div[@class=\\\"XDRRi5\\\"]\")",
+        "requestOTP_Btn" : "By.xpath(\"//button[@class=\\\"QqFHMw twnTnD _7Pd1Fp\\\"]\")",
+        "loginBtn" : "By.xpath(\"(//a[@title=\\\"Login\\\"])[1]\")",
+        "email_TextBox" : "By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")"
+      }
+    },
+    "FlipkartSearchBox" : {
+      "className" : "FlipkartSearchBox",
+      "elements" : {
+        "searchButton" : "By.xpath(\"//button[@type=\\\"submit\\\"]\")",
+        "productLink" : "By.xpath(\"//div[text()=\\\"Apple iPhone 15 Pro Max (Natural Titanium, 256 GB)\\\"]\")",
+        "searchBox" : "By.xpath(\"//input[@name=\\\"q\\\"]\")"
+      }
+    },
+    "FlipkartAddToCart" : {
+      "className" : "FlipkartAddToCart",
+      "elements" : {
+        "addToCartButton" : "By.xpath(\"//button[text()=\\\"Add to cart\\\"]\")",
+        "goToCartButton" : "By.xpath(\"//button[@class=\\\"QqFHMw vslbG+ In9uk2\\\"]\")"
+      }
+    },
+    "FlipkartRegister" : {
+      "className" : "FlipkartRegister",
+      "elements" : {
+        "loginLink" : "By.xpath(\"//a[text()=\\\"Login\\\"]\")",
+        "phoneNo_Box" : "By.xpath(\"//input[@class=\\\"r4vIwl BV+Dqf\\\"]\")",
+        "signUpLink" : "By.xpath(\"//div[text()=\\\"Sign Up\\\"]\")",
+        "submitButton" : "By.xpath(\"(//span[text()=\\\"CONTINUE\\\"])\")",
+        "signupButton" : "By.xpath(\"//span[text()=\\\"Signup\\\"]\")",
+        "OTP" : "By.xpath(\"//span[text()=\\\"Enter OTP\\\"]\")"
+      }
+    },
+    "FlipkartFurnitureProducts" : {
+      "className" : "FlipkartFurnitureProducts",
+      "elements" : {
+        "furnitures" : "By.xpath(\"//span[text()=\\\"Home & Furniture\\\"]\")",
+        "heading" : "By.xpath(\"(//h1[text()=\\\"Blankets\\\"])\")",
+        "blankets" : "By.xpath(\"//a[@title=\\\"Blankets\\\"]\")"
+      }
+    },
+    "FlipkartBrandFilters" : {
+      "className" : "FlipkartBrandFilters",
+      "elements" : {
+        "samsungCheckbox" : "By.xpath(\"//div[text()='SAMSUNG']/preceding-sibling::div\")"
+      }
+    }
+  }
+}
