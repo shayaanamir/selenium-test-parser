@@ -4,9 +4,9 @@
     "totalPageObjects" : 19,
     "totalSteps" : 188,
     "actionTypeCounts" : {
-      "navigate" : 96,
+      "navigate" : 94,
       "select" : 4,
-      "verify" : 40,
+      "verify" : 42,
       "type" : 18,
       "click" : 30
     }
@@ -139,8 +139,8 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     }, {
@@ -808,8 +808,8 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     }, {

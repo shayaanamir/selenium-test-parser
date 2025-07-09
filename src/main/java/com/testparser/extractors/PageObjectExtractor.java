@@ -19,6 +19,9 @@ import java.util.Optional;
 
 public class PageObjectExtractor {
     
+    /**
+     * Main entry point to extract page objects from a project directory
+     */
     public static Map<String, PageObject> extractPageObjects(String projectPath) {
         Map<String, PageObject> pageObjects = new HashMap<>();
         
@@ -33,6 +36,9 @@ public class PageObjectExtractor {
         return pageObjects;
     }
     
+    /**
+     * Recursively scan directories for Java files that contain page object patterns
+     */
     private static void scanForPageObjects(File dir, Map<String, PageObject> pageObjects) {
         if (!dir.exists() || !dir.isDirectory()) {
             return;
@@ -43,6 +49,7 @@ public class PageObjectExtractor {
         
         for (File file : files) {
             if (file.isDirectory()) {
+                // Recursively scan subdirectories
                 scanForPageObjects(file, pageObjects);
             } else if (file.getName().endsWith(".java")) {
                 if (isPageObjectFile(file)) {
@@ -57,6 +64,9 @@ public class PageObjectExtractor {
         }
     }
     
+    /**
+     * Determine if a Java file is likely a page object based on location and content
+     */
     private static boolean isPageObjectFile(File file) {
         String fileName = file.getName();
         String parentDirName = file.getParentFile().getName().toLowerCase();
@@ -76,10 +86,13 @@ public class PageObjectExtractor {
             current = current.getParentFile();
         }
         
-        // Check if file contains @FindBy annotations or extends page object patterns
+        // Check if file contains page object patterns
         return containsPageObjectPatterns(file);
     }
     
+    /**
+     * Check if file contains common page object patterns like @FindBy annotations
+     */
     private static boolean containsPageObjectPatterns(File file) {
         try {
             JavaParser parser = new JavaParser();
@@ -109,6 +122,9 @@ public class PageObjectExtractor {
         }
     }
     
+    /**
+     * Parse a page object file and extract element selectors
+     */
     private static void parsePageObjectFile(File file, Map<String, PageObject> pageObjects) throws Exception {
         // Parse the file
         CompilationUnit cu;
@@ -126,6 +142,7 @@ public class PageObjectExtractor {
             return;
         }
 
+        // Extract web element fields and their selectors
         for (FieldDeclaration field : cu.findAll(FieldDeclaration.class)) {
             if (isWebElementField(field)) {
                 PageObject pageObject = pageObjects.computeIfAbsent(className, k -> 
@@ -143,6 +160,9 @@ public class PageObjectExtractor {
         }
     }
 
+    /**
+     * Check if a field is a web element (WebElement type or has @FindBy annotation)
+     */
     private static boolean isWebElementField(FieldDeclaration field) {
         // Check if the field type contains WebElement
         String fieldType = field.getElementType().asString();
@@ -156,6 +176,9 @@ public class PageObjectExtractor {
         return isWebElement || hasFindByAnnotation;
     }
     
+    /**
+     * Get the class name from the compilation unit
+     */
     private static String getClassName(CompilationUnit cu) {
         // First try the original method
         Optional<String> primaryTypeName = cu.getPrimaryTypeName();
@@ -171,6 +194,9 @@ public class PageObjectExtractor {
                 .orElse(null);
     }
     
+    /**
+     * Extract selector string from @FindBy or @FindElement annotations
+     */
     private static String extractSelector(FieldDeclaration field) {
         for (AnnotationExpr annotation : field.getAnnotations()) {
             String annName = annotation.getNameAsString();
@@ -181,6 +207,9 @@ public class PageObjectExtractor {
         return null;
     }
     
+    /**
+     * Parse annotation to extract locator strategy and value
+     */
     private static String extractSelectorFromAnnotation(AnnotationExpr annotation) {
         if (annotation instanceof SingleMemberAnnotationExpr) {
             // @FindBy("value") format
@@ -212,6 +241,9 @@ public class PageObjectExtractor {
         return annotation.toString();
     }
     
+    /**
+     * Clean and format selector values by removing and re-adding quotes
+     */
     private static String cleanSelectorValue(String value) {
         // Remove surrounding quotes if present
         if (value.startsWith("\"") && value.endsWith("\"")) {
