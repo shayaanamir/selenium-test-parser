@@ -67,7 +67,6 @@ public class PageObjectExtractor {
      * Determine if a Java file is likely a page object based on location and content
      */
     private static boolean isPageObjectFile(File file) {
-        String fileName = file.getName();
         String parentDirName = file.getParentFile().getName().toLowerCase();
         
         // Check if file is in page/pages folder
