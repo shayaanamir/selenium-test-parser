@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * Parses Selenium test projects to extract test cases and page objects into JSON format.
- * Usage: java -jar selenium-test-parser.jar <project-path> [output-file]
+ * Usage: mvn exec:java -Dexec.args="<selenium-project-path> <output-file-name.json>"
  */
 public class TestCaseParser {
     
