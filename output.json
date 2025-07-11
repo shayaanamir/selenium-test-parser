@@ -1,12 +1,34 @@
 {
   "summary" : {
+    "testCasesWithUrls" : 42,
+    "testCasesWithoutUrls" : 0,
     "totalTestCases" : 42,
+    "uniqueUrlCount" : 6,
+    "configUrls" : {
+      "groceryLink" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1",
+      "loginURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F",
+      "flightLink" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights",
+      "filterLink" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off",
+      "productLink" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542",
+      "url" : "https://www.flipkart.com/",
+      "registerLink" : "https://www.flipkart.com/vivo-t3x-5g-celestial-green-128-gb/p/itm263ed44f56cd5?pid=MOBGZZCDPBFWUMWG&lid=LSTMOBGZZCDPBFWUMWGUSZ5RR&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=a2f05a47-ff52-4a68-898b-8cfd15772e60.MOBGZZCDPBFWUMWG.SEARCH&ppt=hp&ppn=homepage&ssid=zz96tjitr40000001715707412612"
+    },
+    "uniqueUrls" : [ "https://www.flipkart.com/", "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542", "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off", "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1", "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights", "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F" ],
     "totalPageObjects" : 19,
+    "totalConfigUrls" : 7,
     "totalSteps" : 188,
+    "testCasesByUrl" : {
+      "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1" : 2,
+      "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542" : 8,
+      "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F" : 2,
+      "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" : 8,
+      "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights" : 2,
+      "https://www.flipkart.com/" : 20
+    },
     "actionTypeCounts" : {
-      "navigate" : 94,
+      "navigate" : 96,
       "select" : 4,
-      "verify" : 42,
+      "verify" : 40,
       "type" : 18,
       "click" : 30
     }
@@ -27,7 +49,8 @@
       "actionType" : "click",
       "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "getFlipkartSite",
     "className" : "Test_FlipkartSite",
@@ -56,7 +79,8 @@
       "actionType" : "verify",
       "elementSelector" : null,
       "value" : "currentURL"
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "clickOnProduct",
     "className" : "Test_FlipkartSite",
@@ -79,7 +103,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "searchProduct",
     "className" : "Test_FlipkartSite",
@@ -120,7 +145,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "changingPinCode",
     "className" : "Test_FlipkartSite",
@@ -139,8 +165,8 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "verify",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     }, {
@@ -155,7 +181,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkProductImages",
     "className" : "Test_FlipkartSite",
@@ -184,7 +211,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "addToCart",
     "className" : "Test_FlipkartSite",
@@ -207,7 +235,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "placeOrder",
     "className" : "Test_FlipkartSite",
@@ -236,7 +265,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "sortProduct",
     "className" : "Test_FlipkartSite",
@@ -265,7 +295,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "applyPriceFilter",
     "className" : "Test_FlipkartSite",
@@ -282,7 +313,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyBrandFilter",
     "className" : "Test_FlipkartSite",
@@ -299,7 +331,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyRatingFilter",
     "className" : "Test_FlipkartSite",
@@ -316,7 +349,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyBatteryCapacityFilter",
     "className" : "Test_FlipkartSite",
@@ -339,7 +373,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "checkMenApparel",
     "className" : "Test_FlipkartSite",
@@ -362,7 +397,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkFurniture",
     "className" : "Test_FlipkartSite",
@@ -385,7 +421,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkOfferZone",
     "className" : "Test_FlipkartSite",
@@ -420,7 +457,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkGrocerySection",
     "className" : "Test_FlipkartSite",
@@ -461,7 +499,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"
   }, {
     "testName" : "checkMyCart",
     "className" : "Test_FlipkartSite",
@@ -490,7 +529,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkFlights",
     "className" : "Test_FlipkartSite",
@@ -555,7 +595,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights"
   }, {
     "testName" : "registerUser",
     "className" : "Test_FlipkartSite",
@@ -620,7 +661,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkLogin",
     "className" : "Test_FlipkartSite",
@@ -679,7 +721,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F"
   }, {
     "testName" : "executeTestCase",
     "className" : "Test_FlipkartSite",
@@ -696,7 +739,8 @@
       "actionType" : "click",
       "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "getFlipkartSite",
     "className" : "Test_FlipkartSite",
@@ -725,7 +769,8 @@
       "actionType" : "verify",
       "elementSelector" : null,
       "value" : "currentURL"
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "clickOnProduct",
     "className" : "Test_FlipkartSite",
@@ -748,7 +793,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "searchProduct",
     "className" : "Test_FlipkartSite",
@@ -789,7 +835,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "changingPinCode",
     "className" : "Test_FlipkartSite",
@@ -808,8 +855,8 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "verify",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     }, {
@@ -824,7 +871,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkProductImages",
     "className" : "Test_FlipkartSite",
@@ -853,7 +901,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "addToCart",
     "className" : "Test_FlipkartSite",
@@ -876,7 +925,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "placeOrder",
     "className" : "Test_FlipkartSite",
@@ -905,7 +955,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "sortProduct",
     "className" : "Test_FlipkartSite",
@@ -934,7 +985,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
   }, {
     "testName" : "applyPriceFilter",
     "className" : "Test_FlipkartSite",
@@ -951,7 +1003,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyBrandFilter",
     "className" : "Test_FlipkartSite",
@@ -968,7 +1021,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyRatingFilter",
     "className" : "Test_FlipkartSite",
@@ -985,7 +1039,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "applyBatteryCapacityFilter",
     "className" : "Test_FlipkartSite",
@@ -1008,7 +1063,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
   }, {
     "testName" : "checkMenApparel",
     "className" : "Test_FlipkartSite",
@@ -1031,7 +1087,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkFurniture",
     "className" : "Test_FlipkartSite",
@@ -1054,7 +1111,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkOfferZone",
     "className" : "Test_FlipkartSite",
@@ -1089,7 +1147,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkGrocerySection",
     "className" : "Test_FlipkartSite",
@@ -1130,7 +1189,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"
   }, {
     "testName" : "checkMyCart",
     "className" : "Test_FlipkartSite",
@@ -1159,7 +1219,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkFlights",
     "className" : "Test_FlipkartSite",
@@ -1224,7 +1285,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights"
   }, {
     "testName" : "registerUser",
     "className" : "Test_FlipkartSite",
@@ -1289,7 +1351,8 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/"
   }, {
     "testName" : "checkLogin",
     "className" : "Test_FlipkartSite",
@@ -1348,8 +1411,18 @@
       "actionType" : "navigate",
       "elementSelector" : null,
       "value" : null
-    } ]
+    } ],
+    "testURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F"
   } ],
+  "configUrls" : {
+    "groceryLink" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1",
+    "loginURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F",
+    "flightLink" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights",
+    "filterLink" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off",
+    "productLink" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542",
+    "url" : "https://www.flipkart.com/",
+    "registerLink" : "https://www.flipkart.com/vivo-t3x-5g-celestial-green-128-gb/p/itm263ed44f56cd5?pid=MOBGZZCDPBFWUMWG&lid=LSTMOBGZZCDPBFWUMWGUSZ5RR&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=a2f05a47-ff52-4a68-898b-8cfd15772e60.MOBGZZCDPBFWUMWG.SEARCH&ppt=hp&ppn=homepage&ssid=zz96tjitr40000001715707412612"
+  },
   "pageObjects" : {
     "FlipkartPriceFilters" : {
       "className" : "FlipkartPriceFilters",

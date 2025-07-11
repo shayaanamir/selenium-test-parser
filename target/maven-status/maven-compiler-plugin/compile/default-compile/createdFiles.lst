@@ -1,6 +1,7 @@
+com\testparser\models\TestCase.class
+com\testparser\utils\ConfigPropertiesReader.class
+com\testparser\models\TestStep.class
 com\testparser\extractors\PageObjectExtractor.class
 com\testparser\models\PageObject.class
 com\testparser\TestCaseParser.class
-com\testparser\models\TestCase.class
 com\testparser\extractors\TestMethodExtractor.class
-com\testparser\models\TestStep.class

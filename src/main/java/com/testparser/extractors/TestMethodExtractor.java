@@ -10,6 +10,7 @@ import com.github.javaparser.ast.stmt.SwitchEntry;
 import com.testparser.models.PageObject;
 import com.testparser.models.TestCase;
 import com.testparser.models.TestStep;
+import com.testparser.utils.ConfigPropertiesReader;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -40,8 +41,11 @@ public class TestMethodExtractor {
         List<TestCase> testCases = new ArrayList<>();
         
         try {
+            // Load URLs from config.properties
+            Map<String, String> configUrls = ConfigPropertiesReader.loadUrlsFromProject(projectPath);
+            
             File projectDir = new File(projectPath);
-            scanForTestFiles(projectDir, testCases, pageObjects);
+            scanForTestFiles(projectDir, testCases, pageObjects, configUrls);
         } catch (Exception e) {
             System.err.println("Error extracting test cases: " + e.getMessage());
             e.printStackTrace();
@@ -53,7 +57,7 @@ public class TestMethodExtractor {
     /**
      * Recursively scan directory for test files
      */
-    private static void scanForTestFiles(File dir, List<TestCase> testCases, Map<String, PageObject> pageObjects) {
+    private static void scanForTestFiles(File dir, List<TestCase> testCases, Map<String, PageObject> pageObjects, Map<String, String> configUrls) {
         if (!dir.exists() || !dir.isDirectory()) {
             return;
         }
@@ -64,11 +68,11 @@ public class TestMethodExtractor {
         for (File file : files) {
             if (file.isDirectory()) {
                 // Recursively scan subdirectories
-                scanForTestFiles(file, testCases, pageObjects);
+                scanForTestFiles(file, testCases, pageObjects, configUrls);
             } else if (file.getName().endsWith(".java")) {
                 if (isTestFile(file)) {
                     try {
-                        parseTestFile(file, testCases, pageObjects);
+                        parseTestFile(file, testCases, pageObjects, configUrls);
                     } catch (Exception e) {
                         System.err.println("Error parsing test file " + file.getName() + ": " + e.getMessage());
                         e.printStackTrace();
@@ -109,7 +113,7 @@ public class TestMethodExtractor {
     /**
      * Parse a test file and extract test cases
      */
-    private static void parseTestFile(File file, List<TestCase> testCases, Map<String, PageObject> pageObjects) throws Exception {
+    private static void parseTestFile(File file, List<TestCase> testCases, Map<String, PageObject> pageObjects, Map<String, String> configUrls) throws Exception {
         JavaParser parser = new JavaParser();
         CompilationUnit cu = parser.parse(new FileInputStream(file)).getResult().orElse(null);
         
@@ -122,7 +126,7 @@ public class TestMethodExtractor {
         // Extract traditional @Test methods
         cu.findAll(MethodDeclaration.class).forEach(method -> {
             if (isTestMethod(method)) {
-                TestCase testCase = extractTestCase(method, className, pageObjects);
+                TestCase testCase = extractTestCase(method, className, pageObjects, configUrls);
                 if (testCase != null) {
                     testCases.add(testCase);
                 }
@@ -132,7 +136,7 @@ public class TestMethodExtractor {
         // Extract data-driven test methods (containing switch statements)
         cu.findAll(MethodDeclaration.class).forEach(method -> {
             if (isDataDrivenTestMethod(method)) {
-                List<TestCase> dataDrivenCases = extractDataDrivenTestCases(method, className, pageObjects, cu);
+                List<TestCase> dataDrivenCases = extractDataDrivenTestCases(method, className, pageObjects, cu, configUrls);
                 testCases.addAll(dataDrivenCases);
             }
         });
@@ -184,7 +188,7 @@ public class TestMethodExtractor {
      * Extract test cases from data-driven test methods
      */
     private static List<TestCase> extractDataDrivenTestCases(MethodDeclaration method, String className, 
-                                                           Map<String, PageObject> pageObjects, CompilationUnit cu) {
+                                                        Map<String, PageObject> pageObjects, CompilationUnit cu, Map<String, String> configUrls) {
         List<TestCase> testCases = new ArrayList<>();
         
         method.getBody().ifPresent(body -> {
@@ -197,7 +201,7 @@ public class TestMethodExtractor {
                         // Find the corresponding private method for this case
                         MethodDeclaration privateMethod = findPrivateMethod(cu, caseValue);
                         if (privateMethod != null) {
-                            TestCase testCase = extractTestCase(privateMethod, className, pageObjects);
+                            TestCase testCase = extractTestCase(privateMethod, className, pageObjects, configUrls);
                             if (testCase != null) {
                                 testCases.add(testCase);
                             }
@@ -234,14 +238,16 @@ public class TestMethodExtractor {
     /**
      * Extract test case details from a method
      */
-    private static TestCase extractTestCase(MethodDeclaration method, String className, Map<String, PageObject> pageObjects) {
+    private static TestCase extractTestCase(MethodDeclaration method, String className, Map<String, PageObject> pageObjects, Map<String, String> configUrls) {
         String testName = method.getNameAsString();
         String description = extractDescription(method);
         List<TestStep> steps = extractSteps(method, pageObjects);
         
-        return new TestCase(testName, className, description, steps);
+        // Extract URL from config based on test method name
+        String testUrl = ConfigPropertiesReader.findMatchingUrl(testName, configUrls);
+        
+        return new TestCase(testName, className, description, steps, testUrl);
     }
-    
     /**
      * Extract description from Javadoc, comments, or method name
      */

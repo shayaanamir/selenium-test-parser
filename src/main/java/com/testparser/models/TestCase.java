@@ -8,6 +8,7 @@ public class TestCase {
     private String className;
     private String description;
     private List<TestStep> steps;
+    private String testURL;  // New field for URL
     
     public TestCase() {}
     
@@ -16,6 +17,15 @@ public class TestCase {
         this.className = className;
         this.description = description;
         this.steps = steps;
+    }
+    
+    // New constructor with URL
+    public TestCase(String testName, String className, String description, List<TestStep> steps, String testURL) {
+        this.testName = testName;
+        this.className = className;
+        this.description = description;
+        this.steps = steps;
+        this.testURL = testURL;
     }
     
     // Getters and setters
@@ -27,4 +37,8 @@ public class TestCase {
     public void setDescription(String description) { this.description = description; }
     public List<TestStep> getSteps() { return steps; }
     public void setSteps(List<TestStep> steps) { this.steps = steps; }
+    
+    // New getter and setter for URL
+    public String getTestURL() { return testURL; }
+    public void setTestURL(String testURL) { this.testURL = testURL; }
 }

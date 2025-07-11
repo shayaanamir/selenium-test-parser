@@ -6,16 +6,18 @@ import com.testparser.extractors.PageObjectExtractor;
 import com.testparser.extractors.TestMethodExtractor;
 import com.testparser.models.PageObject;
 import com.testparser.models.TestCase;
+import com.testparser.utils.ConfigPropertiesReader;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Parses Selenium test projects to extract test cases and page objects into JSON format.
- * Usage: mvn exec:java -Dexec.args="<selenium-project-path> <output-file-name.json>"
+ * Usage: java -jar selenium-test-parser.jar <project-path> [output-file]
  */
 public class TestCaseParser {
     
@@ -48,6 +50,9 @@ public class TestCaseParser {
      * Parses project to extract page objects, test cases, and generates JSON output.
      */
     public static void parseProject(String projectPath, String outputFile) throws IOException {
+        // Load config URLs first
+        Map<String, String> configUrls = ConfigPropertiesReader.loadUrlsFromProject(projectPath);
+        
         // Extract page objects and test cases
         Map<String, PageObject> pageObjects = PageObjectExtractor.extractPageObjects(projectPath);
         List<TestCase> testCases = TestMethodExtractor.extractTestCases(projectPath, pageObjects);
@@ -56,7 +61,8 @@ public class TestCaseParser {
         Map<String, Object> output = new HashMap<>();
         output.put("pageObjects", pageObjects);
         output.put("testCases", testCases);
-        output.put("summary", createSummary(testCases, pageObjects));
+        output.put("configUrls", configUrls);  // Add config URLs to output
+        output.put("summary", createSummary(testCases, pageObjects, configUrls));
         
         // Write to JSON file
         ObjectMapper mapper = new ObjectMapper();
@@ -67,12 +73,13 @@ public class TestCaseParser {
     /**
      * Creates summary statistics for test cases and page objects.
      */
-    private static Map<String, Object> createSummary(List<TestCase> testCases, Map<String, PageObject> pageObjects) {
+    private static Map<String, Object> createSummary(List<TestCase> testCases, Map<String, PageObject> pageObjects, Map<String, String> configUrls) {
         Map<String, Object> summary = new HashMap<>();
         
         // Count totals
         summary.put("totalTestCases", testCases.size());
         summary.put("totalPageObjects", pageObjects.size());
+        summary.put("totalConfigUrls", configUrls.size());
         
         // Calculate total steps across all test cases
         int totalSteps = testCases.stream()
@@ -88,6 +95,34 @@ public class TestCaseParser {
                     java.util.stream.Collectors.counting()
                 ));
         summary.put("actionTypeCounts", actionCounts);
+        
+        // Count test cases with URLs
+        long testCasesWithUrls = testCases.stream()
+                .filter(tc -> tc.getTestURL() != null && !tc.getTestURL().trim().isEmpty())
+                .count();
+        summary.put("testCasesWithUrls", testCasesWithUrls);
+        summary.put("testCasesWithoutUrls", testCases.size() - testCasesWithUrls);
+        
+        // List unique URLs found
+        List<String> uniqueUrls = testCases.stream()
+                .map(TestCase::getTestURL)
+                .filter(url -> url != null && !url.trim().isEmpty())
+                .distinct()
+                .collect(Collectors.toList());
+        summary.put("uniqueUrls", uniqueUrls);
+        summary.put("uniqueUrlCount", uniqueUrls.size());
+        
+        // Group test cases by URL
+        Map<String, Long> urlCounts = testCases.stream()
+                .filter(tc -> tc.getTestURL() != null && !tc.getTestURL().trim().isEmpty())
+                .collect(java.util.stream.Collectors.groupingBy(
+                    TestCase::getTestURL,
+                    java.util.stream.Collectors.counting()
+                ));
+        summary.put("testCasesByUrl", urlCounts);
+        
+        // Add config URLs information
+        summary.put("configUrls", configUrls);
         
         return summary;
     }
