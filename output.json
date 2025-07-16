@@ -1,7 +1,20 @@
 {
   "summary" : {
-    "testCasesWithUrls" : 42,
     "testCasesWithoutUrls" : 0,
+    "uniqueUrls" : [ "https://www.flipkart.com/", "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542", "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off", "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1", "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights", "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F" ],
+    "totalPageObjects" : 19,
+    "totalConfigUrls" : 7,
+    "totalSteps" : 206,
+    "actionTypeCounts" : {
+      "navigate" : 94,
+      "select" : 4,
+      "assert" : 40,
+      "verify" : 20,
+      "type" : 18,
+      "click" : 30
+    },
+    "totalElements" : 48,
+    "testCasesWithUrls" : 42,
     "totalTestCases" : 42,
     "uniqueUrlCount" : 6,
     "configUrls" : {
@@ -13,10 +26,27 @@
       "url" : "https://www.flipkart.com/",
       "registerLink" : "https://www.flipkart.com/vivo-t3x-5g-celestial-green-128-gb/p/itm263ed44f56cd5?pid=MOBGZZCDPBFWUMWG&lid=LSTMOBGZZCDPBFWUMWGUSZ5RR&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=a2f05a47-ff52-4a68-898b-8cfd15772e60.MOBGZZCDPBFWUMWG.SEARCH&ppt=hp&ppn=homepage&ssid=zz96tjitr40000001715707412612"
     },
-    "uniqueUrls" : [ "https://www.flipkart.com/", "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542", "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off", "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1", "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights", "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F" ],
-    "totalPageObjects" : 19,
-    "totalConfigUrls" : 7,
-    "totalSteps" : 188,
+    "pageObjectElementCounts" : {
+      "FlipkartPriceFilters" : 1,
+      "FlipkartFlightPage" : 4,
+      "FlipkartCheckCart" : 2,
+      "FlipkartChangePincode" : 2,
+      "FlipkartRatingFilters" : 1,
+      "FlipkartPlaceOrder" : 2,
+      "FlipkartCheckProductImages" : 1,
+      "FlipkartOfferZonePage" : 3,
+      "FlipkartSortFilter" : 1,
+      "FlipkartBatteryFilter" : 2,
+      "FlipkartMenApparel" : 3,
+      "FlipkartGroceryPage" : 5,
+      "FlipkartClickProductHome" : 2,
+      "FlipkartLoginPage" : 4,
+      "FlipkartSearchBox" : 3,
+      "FlipkartAddToCart" : 2,
+      "FlipkartRegister" : 6,
+      "FlipkartFurnitureProducts" : 3,
+      "FlipkartBrandFilters" : 1
+    },
     "testCasesByUrl" : {
       "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1" : 2,
       "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542" : 8,
@@ -24,13 +54,6 @@
       "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" : 8,
       "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights" : 2,
       "https://www.flipkart.com/" : 20
-    },
-    "actionTypeCounts" : {
-      "navigate" : 96,
-      "select" : 4,
-      "verify" : 40,
-      "type" : 18,
-      "click" : 30
     }
   },
   "testCases" : [ {
@@ -49,6 +72,54 @@
       "actionType" : "click",
       "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
       "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify element By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\") with condition: checkProductImages",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : "checkProductImages"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify element By.xpath(\"//span[text()=\\\"Men\\\"]\") with condition: checkMenApparel",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Men\\\"]\")",
+      "value" : "checkMenApparel"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify element By.xpath(\"//span[text()=\\\"Home & Furniture\\\"]\") with condition: checkFurniture",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Home & Furniture\\\"]\")",
+      "value" : "checkFurniture"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Verify element By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\") with condition: checkOfferZone",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "value" : "checkOfferZone"
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Verify element By.xpath(\"//a[text()=\\\"Grocery\\\"]\") with condition: checkGrocerySection",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : "checkGrocerySection"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Verify element By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\") with condition: checkMyCart",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : "checkMyCart"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify  with condition: checkFlights",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "checkFlights"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Verify element By.xpath(\"//input[@type=\\\"text\\\"]\") with condition: checkLogin",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : "checkLogin"
     } ],
     "testURL" : "https://www.flipkart.com/"
   }, {
@@ -75,10 +146,10 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: currentURL",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that value equals URL",
+      "actionType" : "assert",
       "elementSelector" : null,
-      "value" : "currentURL"
+      "value" : "URL"
     } ],
     "testURL" : "https://www.flipkart.com/"
   }, {
@@ -93,8 +164,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isProductClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isProductClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isProductClicked"
     }, {
@@ -135,8 +206,8 @@
       "value" : null
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Verify with value: isProductClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isProductClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isProductClicked"
     }, {
@@ -165,14 +236,14 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : null
+      "value" : "getExpectedText"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -201,8 +272,8 @@
       "value" : "productLink"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isSeen",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isSeen is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isSeen"
     }, {
@@ -225,8 +296,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -255,8 +326,8 @@
       "value" : null
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -285,8 +356,8 @@
       "value" : "filterLink"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -303,8 +374,8 @@
     "description" : "This test case is to apply price filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -321,8 +392,8 @@
     "description" : "This test case is to apply brand filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -339,8 +410,8 @@
     "description" : "This test case is to apply rating filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -363,8 +434,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -387,8 +458,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -405,18 +476,24 @@
     "description" : "This test case is to check furniture products",
     "steps" : [ {
       "stepNumber" : 1,
+      "stepDescription" : "Verify element By.xpath(\"//a[@title=\\\"Blankets\\\"]\") with condition: checkBlankets",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[@title=\\\"Blankets\\\"]\")",
+      "value" : "checkBlankets"
+    }, {
+      "stepNumber" : 2,
       "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
       "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
       "value" : null
     }, {
-      "stepNumber" : 2,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepNumber" : 3,
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
-      "stepNumber" : 3,
+      "stepNumber" : 4,
       "stepDescription" : "Navigate",
       "actionType" : "navigate",
       "elementSelector" : null,
@@ -447,8 +524,8 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -489,8 +566,8 @@
       "value" : null
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -519,8 +596,8 @@
       "value" : null
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -585,8 +662,8 @@
       "value" : "arrivalCity"
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -651,8 +728,8 @@
       "value" : null
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -711,8 +788,8 @@
       "value" : "OTP"
     }, {
       "stepNumber" : 8,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -739,6 +816,54 @@
       "actionType" : "click",
       "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
       "value" : null
+    }, {
+      "stepNumber" : 3,
+      "stepDescription" : "Verify element By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\") with condition: checkProductImages",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "value" : "checkProductImages"
+    }, {
+      "stepNumber" : 4,
+      "stepDescription" : "Verify element By.xpath(\"//span[text()=\\\"Men\\\"]\") with condition: checkMenApparel",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Men\\\"]\")",
+      "value" : "checkMenApparel"
+    }, {
+      "stepNumber" : 5,
+      "stepDescription" : "Verify element By.xpath(\"//span[text()=\\\"Home & Furniture\\\"]\") with condition: checkFurniture",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//span[text()=\\\"Home & Furniture\\\"]\")",
+      "value" : "checkFurniture"
+    }, {
+      "stepNumber" : 6,
+      "stepDescription" : "Verify element By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\") with condition: checkOfferZone",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Offer Zone\\\"]\")",
+      "value" : "checkOfferZone"
+    }, {
+      "stepNumber" : 7,
+      "stepDescription" : "Verify element By.xpath(\"//a[text()=\\\"Grocery\\\"]\") with condition: checkGrocerySection",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "value" : "checkGrocerySection"
+    }, {
+      "stepNumber" : 8,
+      "stepDescription" : "Verify element By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\") with condition: checkMyCart",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "value" : "checkMyCart"
+    }, {
+      "stepNumber" : 9,
+      "stepDescription" : "Verify  with condition: checkFlights",
+      "actionType" : "verify",
+      "elementSelector" : null,
+      "value" : "checkFlights"
+    }, {
+      "stepNumber" : 10,
+      "stepDescription" : "Verify element By.xpath(\"//input[@type=\\\"text\\\"]\") with condition: checkLogin",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "value" : "checkLogin"
     } ],
     "testURL" : "https://www.flipkart.com/"
   }, {
@@ -765,10 +890,10 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: currentURL",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that value equals URL",
+      "actionType" : "assert",
       "elementSelector" : null,
-      "value" : "currentURL"
+      "value" : "URL"
     } ],
     "testURL" : "https://www.flipkart.com/"
   }, {
@@ -783,8 +908,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isProductClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isProductClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isProductClicked"
     }, {
@@ -825,8 +950,8 @@
       "value" : null
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Verify with value: isProductClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isProductClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isProductClicked"
     }, {
@@ -855,14 +980,14 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : null
+      "value" : "getExpectedText"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -891,8 +1016,8 @@
       "value" : "productLink"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isSeen",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isSeen is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isSeen"
     }, {
@@ -915,8 +1040,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -945,8 +1070,8 @@
       "value" : null
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -975,8 +1100,8 @@
       "value" : "filterLink"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -993,8 +1118,8 @@
     "description" : "This test case is to apply price filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1011,8 +1136,8 @@
     "description" : "This test case is to apply brand filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1029,8 +1154,8 @@
     "description" : "This test case is to apply rating filter",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1053,8 +1178,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1077,8 +1202,8 @@
       "value" : null
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -1095,18 +1220,24 @@
     "description" : "This test case is to check furniture products",
     "steps" : [ {
       "stepNumber" : 1,
+      "stepDescription" : "Verify element By.xpath(\"//a[@title=\\\"Blankets\\\"]\") with condition: checkBlankets",
+      "actionType" : "verify",
+      "elementSelector" : "By.xpath(\"//a[@title=\\\"Blankets\\\"]\")",
+      "value" : "checkBlankets"
+    }, {
+      "stepNumber" : 2,
       "stepDescription" : "Navigate on element: By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
       "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"(//span[text()=\\\"New Delhi - 110010\\\"])\")",
       "value" : null
     }, {
-      "stepNumber" : 2,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepNumber" : 3,
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
-      "stepNumber" : 3,
+      "stepNumber" : 4,
       "stepDescription" : "Navigate",
       "actionType" : "navigate",
       "elementSelector" : null,
@@ -1137,8 +1268,8 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -1179,8 +1310,8 @@
       "value" : null
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -1209,8 +1340,8 @@
       "value" : null
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify with value: actualText.contains(expectedText)",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that actualText.contains(expectedText) is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "actualText.contains(expectedText)"
     }, {
@@ -1275,8 +1406,8 @@
       "value" : "arrivalCity"
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1341,8 +1472,8 @@
       "value" : null
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {
@@ -1401,8 +1532,8 @@
       "value" : "OTP"
     }, {
       "stepNumber" : 8,
-      "stepDescription" : "Verify with value: isClicked",
-      "actionType" : "verify",
+      "stepDescription" : "Assert that isClicked is true",
+      "actionType" : "assert",
       "elementSelector" : null,
       "value" : "isClicked"
     }, {

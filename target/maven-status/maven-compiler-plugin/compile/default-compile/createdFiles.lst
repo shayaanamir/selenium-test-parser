@@ -1,7 +1,14 @@
-com\testparser\models\TestCase.class
 com\testparser\utils\ConfigPropertiesReader.class
-com\testparser\models\TestStep.class
+com\testparser\extractors\TestCaseExtractor.class
 com\testparser\extractors\PageObjectExtractor.class
 com\testparser\models\PageObject.class
 com\testparser\TestCaseParser.class
+com\testparser\extractors\TestStepExtractor$AssertionInfo.class
+com\testparser\extractors\TestStepExtractor.class
+com\testparser\extractors\TestFileParser.class
+com\testparser\extractors\ElementSelectorFinder.class
+com\testparser\models\TestCase.class
+com\testparser\extractors\TestFileScanner.class
+com\testparser\models\TestStep.class
 com\testparser\extractors\TestMethodExtractor.class
+com\testparser\extractors\SemanticMatcher.class

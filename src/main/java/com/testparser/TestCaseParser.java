@@ -53,9 +53,12 @@ public class TestCaseParser {
         // Load config URLs first
         Map<String, String> configUrls = ConfigPropertiesReader.loadUrlsFromProject(projectPath);
         
-        // Extract page objects and test cases
+        // Extract page objects first (required for test case extraction)
         Map<String, PageObject> pageObjects = PageObjectExtractor.extractPageObjects(projectPath);
-        List<TestCase> testCases = TestMethodExtractor.extractTestCases(projectPath, pageObjects);
+        
+        // Extract test cases using the new TestMethodExtractor
+        TestMethodExtractor testMethodExtractor = new TestMethodExtractor();
+        List<TestCase> testCases = testMethodExtractor.extractTestCases(projectPath, pageObjects);
         
         // Create output structure with summary statistics
         Map<String, Object> output = new HashMap<>();
@@ -120,6 +123,20 @@ public class TestCaseParser {
                     java.util.stream.Collectors.counting()
                 ));
         summary.put("testCasesByUrl", urlCounts);
+        
+        // Add page object element counts
+        Map<String, Integer> pageObjectElementCounts = pageObjects.entrySet().stream()
+                .collect(Collectors.toMap(
+                    Map.Entry::getKey,
+                    entry -> entry.getValue().getElements().size()
+                ));
+        summary.put("pageObjectElementCounts", pageObjectElementCounts);
+        
+        // Calculate total elements across all page objects
+        int totalElements = pageObjects.values().stream()
+                .mapToInt(po -> po.getElements().size())
+                .sum();
+        summary.put("totalElements", totalElements);
         
         // Add config URLs information
         summary.put("configUrls", configUrls);

@@ -1,7 +1,13 @@
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\models\TestStep.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\models\TestCase.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\ElementSelectorFinder.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\PageObjectExtractor.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\TestFileScanner.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\TestFileParser.java
 C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\TestMethodExtractor.java
 C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\utils\ConfigPropertiesReader.java
-C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\models\TestStep.java
 C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\TestCaseParser.java
-C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\models\TestCase.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\SemanticMatcher.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\TestStepExtractor.java
+C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\TestCaseExtractor.java
 C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\models\PageObject.java
-C:\Users\shaya\Documents\Projects\selenium-test-parser\src\main\java\com\testparser\extractors\PageObjectExtractor.java
