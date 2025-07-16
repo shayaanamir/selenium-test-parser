@@ -5,10 +5,13 @@ import com.testparser.models.PageObject;
 import java.util.Map;
 
 /**
- * Enhanced SemanticMatcher with assertion-specific patterns
+ * Handles semantic matching of element names and method names
  */
 public class SemanticMatcher {
     
+    /**
+     * Find element using semantic matching patterns
+     */
     public String findElementBySemanticMatching(String methodName, Map<String, PageObject> pageObjects) {
         String coreElementName = extractCoreElementName(methodName);
         
@@ -28,29 +31,17 @@ public class SemanticMatcher {
     }
     
     /**
-     * Extract core element name by removing action prefixes and assertion prefixes
+     * Extract core element name by removing action prefixes
      */
     private String extractCoreElementName(String methodName) {
-        String[] actionPrefixes = {"click", "enter", "select", "type", "set", "get", "wait", "send"};
-        String[] assertionPrefixes = {"assert", "verify", "check", "expect", "should", "is", "has"};
-        
+        String[] actionPrefixes = {"click", "enter", "select", "type", "set", "get", "wait", "verify", "assert", "send"};
         String lowerMethodName = methodName.toLowerCase();
         
-        // Remove action prefixes first
         for (String prefix : actionPrefixes) {
             if (lowerMethodName.startsWith(prefix)) {
                 String remaining = methodName.substring(prefix.length());
                 if (remaining.length() > 0) {
-                    return remaining.substring(0, 1).toLowerCase() + remaining.substring(1);
-                }
-            }
-        }
-        
-        // Remove assertion prefixes
-        for (String prefix : assertionPrefixes) {
-            if (lowerMethodName.startsWith(prefix)) {
-                String remaining = methodName.substring(prefix.length());
-                if (remaining.length() > 0) {
+                    // Convert first character to lowercase
                     return remaining.substring(0, 1).toLowerCase() + remaining.substring(1);
                 }
             }
@@ -59,6 +50,9 @@ public class SemanticMatcher {
         return methodName;
     }
     
+    /**
+     * Check if two element names are semantically related
+     */
     private boolean isSemanticMatch(String coreElementName, String elementKey, String fullMethodName) {
         String lowerCoreElement = coreElementName.toLowerCase();
         String lowerElementKey = elementKey.toLowerCase();
@@ -79,25 +73,24 @@ public class SemanticMatcher {
             return true;
         }
         
-        // Enhanced semantic mappings including assertion patterns
+        // Semantic mappings for common UI patterns
         Map<String, String[]> semanticMappings = Map.of(
             "search", new String[]{"search", "find", "query", "box"},
             "login", new String[]{"login", "signin", "username", "email"},
             "password", new String[]{"password", "pass", "pwd"},
             "submit", new String[]{"submit", "send", "save", "confirm", "button"},
-            "product", new String[]{"product", "item", "goods", "clicked", "selected"},
+            "product", new String[]{"product", "item", "goods"},
             "cart", new String[]{"cart", "basket", "bag"},
-            "checkout", new String[]{"checkout", "pay", "purchase", "order"},
-            "message", new String[]{"message", "notification", "alert", "error", "success"},
-            "visible", new String[]{"visible", "displayed", "shown", "present"},
-            "enabled", new String[]{"enabled", "active", "clickable", "available"}
+            "checkout", new String[]{"checkout", "pay", "purchase", "order"}
         );
         
         for (Map.Entry<String, String[]> mapping : semanticMappings.entrySet()) {
             String key = mapping.getKey();
             String[] synonyms = mapping.getValue();
             
+            // Check if core element name matches the key
             if (lowerCoreElement.contains(key)) {
+                // Check if element key matches any synonym
                 for (String synonym : synonyms) {
                     if (lowerElementKey.contains(synonym)) {
                         return true;
@@ -105,23 +98,11 @@ public class SemanticMatcher {
                 }
             }
             
+            // Check if element key matches the key
             if (lowerElementKey.contains(key)) {
+                // Check if core element name matches any synonym
                 for (String synonym : synonyms) {
                     if (lowerCoreElement.contains(synonym)) {
-                        return true;
-                    }
-                }
-            }
-        }
-        
-        // Special handling for boolean assertion patterns
-        if (lowerFullMethod.contains("is") || lowerFullMethod.contains("has")) {
-            // For methods like isProductClicked(), try to match "product" with elements
-            String[] booleanPrefixes = {"is", "has", "get"};
-            for (String prefix : booleanPrefixes) {
-                if (lowerFullMethod.startsWith(prefix)) {
-                    String remaining = lowerFullMethod.substring(prefix.length());
-                    if (remaining.contains(lowerElementKey) || lowerElementKey.contains(remaining)) {
                         return true;
                     }
                 }
