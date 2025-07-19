@@ -6,10 +6,10 @@
     "totalConfigUrls" : 7,
     "totalSteps" : 206,
     "actionTypeCounts" : {
-      "navigate" : 96,
+      "navigate" : 94,
       "select" : 4,
       "assert" : 40,
-      "verify" : 18,
+      "verify" : 20,
       "type" : 18,
       "click" : 30
     },
@@ -166,7 +166,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isProductClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 3,
@@ -208,7 +208,7 @@
       "stepNumber" : 5,
       "stepDescription" : "Assert that isProductClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 6,
@@ -236,10 +236,10 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : null
+      "value" : "getExpectedText"
     }, {
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
@@ -298,7 +298,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
@@ -328,7 +328,7 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
@@ -358,7 +358,7 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
@@ -376,7 +376,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -394,7 +394,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -412,7 +412,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -436,7 +436,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
@@ -664,7 +664,7 @@
       "stepNumber" : 9,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
@@ -730,7 +730,7 @@
       "stepNumber" : 9,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
@@ -790,7 +790,7 @@
       "stepNumber" : 8,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 9,
@@ -910,7 +910,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isProductClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 3,
@@ -952,7 +952,7 @@
       "stepNumber" : 5,
       "stepDescription" : "Assert that isProductClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 6,
@@ -980,10 +980,10 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
-      "actionType" : "navigate",
+      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
+      "actionType" : "verify",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : null
+      "value" : "getExpectedText"
     }, {
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
@@ -1042,7 +1042,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
@@ -1072,7 +1072,7 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
@@ -1102,7 +1102,7 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
@@ -1120,7 +1120,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -1138,7 +1138,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -1156,7 +1156,7 @@
       "stepNumber" : 1,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
@@ -1180,7 +1180,7 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
@@ -1408,7 +1408,7 @@
       "stepNumber" : 9,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
@@ -1474,7 +1474,7 @@
       "stepNumber" : 9,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
@@ -1534,7 +1534,7 @@
       "stepNumber" : 8,
       "stepDescription" : "Assert that isClicked is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "isClicked"
     }, {
       "stepNumber" : 9,

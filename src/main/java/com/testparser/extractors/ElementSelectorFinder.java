@@ -25,6 +25,14 @@ public class ElementSelectorFinder {
         String scope = call.getScope().map(Object::toString).orElse("");
         String methodName = call.getNameAsString();
         
+        // Check if this is a boolean assertion first
+        if (isBooleanAssertion(call)) {
+            String booleanElementSelector = inferElementFromBooleanAssertion(call, pageObjects);
+            if (booleanElementSelector != null) {
+                return booleanElementSelector;
+            }
+        }
+        
         // Strategy 1: Look for direct By.* selector in method call
         String callString = call.toString();
         if (callString.contains("By.")) {
@@ -107,6 +115,157 @@ public class ElementSelectorFinder {
         }
         
         return null;
+    }
+    
+    /**
+     * Check if this is a boolean assertion
+     */
+    private boolean isBooleanAssertion(MethodCallExpr call) {
+        String callString = call.toString();
+        String methodName = call.getNameAsString();
+        
+        // Check for explicit boolean values
+        if (callString.contains("true") || callString.contains("false")) {
+            return true;
+        }
+        
+        // Check for boolean variable patterns (isXxx, hasXxx, canXxx, shouldXxx)
+        if (callString.matches(".*\\b(is[A-Z][a-zA-Z]*|has[A-Z][a-zA-Z]*|can[A-Z][a-zA-Z]*|should[A-Z][a-zA-Z]*)\\b.*")) {
+            return true;
+        }
+        
+        // Check if it's an assertion method with boolean-like arguments
+        if (isAssertionMethod(methodName)) {
+            if (call.getArguments().size() > 0) {
+                String firstArg = call.getArguments().get(0).toString();
+                // Check for boolean method patterns in arguments
+                if (firstArg.matches(".*(is[A-Z][a-zA-Z]*|has[A-Z][a-zA-Z]*|can[A-Z][a-zA-Z]*|should[A-Z][a-zA-Z]*)\\(\\).*")) {
+                    return true;
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Infer element selector from boolean assertion
+     */
+    private String inferElementFromBooleanAssertion(MethodCallExpr call, Map<String, PageObject> pageObjects) {
+        String callString = call.toString();
+        
+        // Extract boolean variable/method name
+        String booleanIdentifier = extractBooleanIdentifier(callString);
+        if (booleanIdentifier != null) {
+            return findRelatedElement(booleanIdentifier, pageObjects);
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Extract boolean identifier from the call string
+     */
+    private String extractBooleanIdentifier(String callString) {
+        // Pattern to match boolean identifiers like isProductClicked, hasLoginButton, etc.
+        Pattern booleanPattern = Pattern.compile("\\b(is[A-Z][a-zA-Z]*|has[A-Z][a-zA-Z]*|can[A-Z][a-zA-Z]*|should[A-Z][a-zA-Z]*)\\b");
+        Matcher matcher = booleanPattern.matcher(callString);
+        
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+        
+        // Also check for method calls like someMethod() that return boolean
+        Pattern methodCallPattern = Pattern.compile("([a-zA-Z][a-zA-Z0-9]*)\\(\\)");
+        matcher = methodCallPattern.matcher(callString);
+        
+        if (matcher.find()) {
+            String methodName = matcher.group(1);
+            // Only consider if it looks like a boolean method
+            if (methodName.startsWith("is") || methodName.startsWith("has") || 
+                methodName.startsWith("can") || methodName.startsWith("should") ||
+                methodName.contains("Click") || methodName.contains("Valid") ||
+                methodName.contains("Success") || methodName.contains("Complete")) {
+                return methodName;
+            }
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Find element related to the boolean identifier
+     */
+    private String findRelatedElement(String booleanIdentifier, Map<String, PageObject> pageObjects) {
+        if (booleanIdentifier == null) {
+            return null;
+        }
+        
+        // Extract key terms from boolean identifier
+        String[] keyTerms = extractKeyTerms(booleanIdentifier);
+        
+        for (PageObject pageObject : pageObjects.values()) {
+            for (Map.Entry<String, String> element : pageObject.getElements().entrySet()) {
+                String elementKey = element.getKey().toLowerCase();
+                
+                // Check if element key contains any of the key terms
+                for (String term : keyTerms) {
+                    if (elementKey.contains(term.toLowerCase())) {
+                        return element.getValue();
+                    }
+                }
+                
+                // Reverse check - if any key term contains the element key
+                for (String term : keyTerms) {
+                    if (term.toLowerCase().contains(elementKey)) {
+                        return element.getValue();
+                    }
+                }
+            }
+        }
+        
+        // If no direct match found, try semantic matching with the key terms
+        for (String term : keyTerms) {
+            String semanticMatch = semanticMatcher.findElementBySemanticMatching(term, pageObjects);
+            if (semanticMatch != null) {
+                return semanticMatch;
+            }
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Extract key terms from boolean identifier
+     */
+    private String[] extractKeyTerms(String booleanIdentifier) {
+        // Remove common boolean prefixes
+        String withoutPrefix = booleanIdentifier;
+        if (booleanIdentifier.startsWith("is")) {
+            withoutPrefix = booleanIdentifier.substring(2);
+        } else if (booleanIdentifier.startsWith("has")) {
+            withoutPrefix = booleanIdentifier.substring(3);
+        } else if (booleanIdentifier.startsWith("can")) {
+            withoutPrefix = booleanIdentifier.substring(3);
+        } else if (booleanIdentifier.startsWith("should")) {
+            withoutPrefix = booleanIdentifier.substring(6);
+        }
+        
+        // Split camelCase into words
+        String[] terms = withoutPrefix.split("(?=[A-Z])");
+        
+        // Clean up terms and convert to lowercase
+        for (int i = 0; i < terms.length; i++) {
+            terms[i] = terms[i].toLowerCase();
+            // Remove common action words that might not help in matching
+            if (terms[i].equals("clicked") || terms[i].equals("valid") || 
+                terms[i].equals("success") || terms[i].equals("complete") ||
+                terms[i].equals("ed") || terms[i].isEmpty()) {
+                terms[i] = "";
+            }
+        }
+        
+        return terms;
     }
     
     /**
