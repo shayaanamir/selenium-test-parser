@@ -35,7 +35,13 @@ public class ElementSelectorFinder {
             }
         }
         
-        // Strategy 2: Match page object method calls (e.g., loginPage.clickLoginButton())
+        // Strategy 2: Extract element from assertion method arguments
+        String assertionElementSelector = extractElementFromAssertionArgs(call, pageObjects);
+        if (assertionElementSelector != null) {
+            return assertionElementSelector;
+        }
+        
+        // Strategy 3: Match page object method calls (e.g., loginPage.clickLoginButton())
         for (PageObject pageObject : pageObjects.values()) {
             String pageObjectClassName = pageObject.getClassName();
             
@@ -48,7 +54,7 @@ public class ElementSelectorFinder {
                     return pageObject.getElements().get(methodName);
                 }
                 
-                // Match after removing action prefixes
+                // Match after removing action prefixes (including assertion prefixes)
                 String elementName = removeActionPrefixes(methodName);
                 if (pageObject.getElements().containsKey(elementName)) {
                     return pageObject.getElements().get(elementName);
@@ -68,23 +74,35 @@ public class ElementSelectorFinder {
             }
         }
         
-        // Strategy 3: Enhanced semantic matching across all page objects
+        // Strategy 4: Enhanced semantic matching across all page objects
         String elementSelector = semanticMatcher.findElementBySemanticMatching(methodName, pageObjects);
         if (elementSelector != null) {
             return elementSelector;
         }
         
-        // Strategy 4: Search all page objects without scope matching
+        // Strategy 5: Search all page objects without scope matching
         for (PageObject pageObject : pageObjects.values()) {
             // Direct match
             if (pageObject.getElements().containsKey(methodName)) {
                 return pageObject.getElements().get(methodName);
             }
             
-            // Match after removing action prefixes
+            // Match after removing action prefixes (including assertion prefixes)
             String elementName = removeActionPrefixes(methodName);
             if (pageObject.getElements().containsKey(elementName)) {
                 return pageObject.getElements().get(elementName);
+            }
+            
+            // Enhanced partial matching for assertions
+            for (Map.Entry<String, String> element : pageObject.getElements().entrySet()) {
+                String elementKey = element.getKey().toLowerCase();
+                String methodLower = methodName.toLowerCase();
+                String elementNameLower = elementName.toLowerCase();
+                
+                if (elementKey.contains(methodLower) || methodLower.contains(elementKey) ||
+                    elementKey.contains(elementNameLower) || elementNameLower.contains(elementKey)) {
+                    return element.getValue();
+                }
             }
         }
         
@@ -92,10 +110,134 @@ public class ElementSelectorFinder {
     }
     
     /**
-     * Remove common action prefixes from method names
+     * Extract element selector from assertion method arguments
+     */
+    private String extractElementFromAssertionArgs(MethodCallExpr call, Map<String, PageObject> pageObjects) {
+        String methodName = call.getNameAsString();
+        
+        // Check if this is an assertion method
+        if (isAssertionMethod(methodName)) {
+            // Look for element references in the arguments
+            if (call.getArguments().size() > 0) {
+                String firstArg = call.getArguments().get(0).toString();
+                
+                // Check if argument contains a method call that might reference an element
+                if (firstArg.contains(".")) {
+                    String[] parts = firstArg.split("\\.");
+                    if (parts.length >= 2) {
+                        String possibleScope = parts[0];
+                        String possibleMethod = parts[1].replaceAll("\\([^)]*\\)", ""); // Remove parameters
+                        
+                        // Try to find element using the extracted scope and method
+                        String elementSelector = findElementInPageObjects(possibleScope, possibleMethod, pageObjects);
+                        if (elementSelector != null) {
+                            return elementSelector;
+                        }
+                    }
+                }
+                
+                // Check if argument directly references an element
+                String elementSelector = findElementDirectly(firstArg, pageObjects);
+                if (elementSelector != null) {
+                    return elementSelector;
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Check if method is an assertion method
+     */
+    private boolean isAssertionMethod(String methodName) {
+        String lowerMethodName = methodName.toLowerCase();
+        return lowerMethodName.startsWith("assert") || 
+               lowerMethodName.startsWith("verify") || 
+               lowerMethodName.startsWith("expect") ||
+               lowerMethodName.startsWith("check") ||
+               lowerMethodName.contains("should") ||
+               lowerMethodName.contains("equals") ||
+               lowerMethodName.contains("contains") ||
+               lowerMethodName.contains("visible") ||
+               lowerMethodName.contains("displayed") ||
+               lowerMethodName.contains("enabled") ||
+               lowerMethodName.contains("present");
+    }
+    
+    /**
+     * Find element in page objects using scope and method
+     */
+    private String findElementInPageObjects(String scope, String method, Map<String, PageObject> pageObjects) {
+        for (PageObject pageObject : pageObjects.values()) {
+            String pageObjectClassName = pageObject.getClassName();
+            
+            // Check if scope matches page object class
+            if (scope.toLowerCase().contains(pageObjectClassName.toLowerCase()) || 
+                scope.toLowerCase().contains(pageObjectClassName.toLowerCase().replace("page", ""))) {
+                
+                // Direct method name match
+                if (pageObject.getElements().containsKey(method)) {
+                    return pageObject.getElements().get(method);
+                }
+                
+                // Match after removing action prefixes
+                String elementName = removeActionPrefixes(method);
+                if (pageObject.getElements().containsKey(elementName)) {
+                    return pageObject.getElements().get(elementName);
+                }
+                
+                // Partial matches
+                for (Map.Entry<String, String> element : pageObject.getElements().entrySet()) {
+                    String elementKey = element.getKey().toLowerCase();
+                    String methodLower = method.toLowerCase();
+                    String elementNameLower = elementName.toLowerCase();
+                    
+                    if (elementKey.contains(methodLower) || methodLower.contains(elementKey) ||
+                        elementKey.contains(elementNameLower) || elementNameLower.contains(elementKey)) {
+                        return element.getValue();
+                    }
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Find element directly by name across all page objects
+     */
+    private String findElementDirectly(String elementRef, Map<String, PageObject> pageObjects) {
+        for (PageObject pageObject : pageObjects.values()) {
+            // Direct match
+            if (pageObject.getElements().containsKey(elementRef)) {
+                return pageObject.getElements().get(elementRef);
+            }
+            
+            // Partial matches
+            for (Map.Entry<String, String> element : pageObject.getElements().entrySet()) {
+                String elementKey = element.getKey().toLowerCase();
+                String elementRefLower = elementRef.toLowerCase();
+                
+                if (elementKey.contains(elementRefLower) || elementRefLower.contains(elementKey)) {
+                    return element.getValue();
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    /**
+     * Remove common action prefixes from method names (including assertion prefixes)
      */
     private String removeActionPrefixes(String methodName) {
-        String[] prefixes = {"click", "enter", "select", "type", "set", "get", "wait", "verify", "assert", "send"};
+        String[] prefixes = {
+            "click", "enter", "select", "type", "set", "get", "wait", 
+            "verify", "assert", "send", "check", "expect", "should",
+            "is", "has", "contains", "equals", "visible", "displayed",
+            "enabled", "present", "getText", "getValue", "getAttribute"
+        };
         String lowerMethodName = methodName.toLowerCase();
         
         for (String prefix : prefixes) {

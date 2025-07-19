@@ -6,10 +6,10 @@
     "totalConfigUrls" : 7,
     "totalSteps" : 206,
     "actionTypeCounts" : {
-      "navigate" : 94,
+      "navigate" : 96,
       "select" : 4,
       "assert" : 40,
-      "verify" : 20,
+      "verify" : 18,
       "type" : 18,
       "click" : 30
     },
@@ -146,9 +146,9 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Assert that value equals URL",
+      "stepDescription" : "Assert that element By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\") equals URL",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "URL"
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -170,9 +170,9 @@
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -212,9 +212,9 @@
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 6,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -236,21 +236,21 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
-      "actionType" : "verify",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : "getExpectedText"
+      "value" : null
     }, {
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -260,9 +260,9 @@
     "description" : "This test case is for chechking product images",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -278,9 +278,9 @@
       "value" : "isSeen"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -290,9 +290,9 @@
     "description" : "This test case is to Add Product to cart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -302,9 +302,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -314,9 +314,9 @@
     "description" : "This test case is to place order",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -332,9 +332,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -344,9 +344,9 @@
     "description" : "This test case is to sort product based on price",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -362,9 +362,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -380,9 +380,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -398,9 +398,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -416,9 +416,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -440,9 +440,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -460,13 +460,13 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -490,13 +490,13 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -526,13 +526,13 @@
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -542,9 +542,9 @@
     "description" : "This test case is to check Grocery Store of Flipkart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -568,13 +568,13 @@
       "stepNumber" : 5,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 6,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"
@@ -584,9 +584,9 @@
     "description" : "This test case is to check my Cart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -598,13 +598,13 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -614,9 +614,9 @@
     "description" : "This test case is to check Flight Booking Section",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -668,9 +668,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights"
@@ -680,9 +680,9 @@
     "description" : "This test case is for Register functionality",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -734,9 +734,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -746,9 +746,9 @@
     "description" : "This test case is for Login Functionality",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -794,9 +794,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F"
@@ -890,9 +890,9 @@
       "value" : null
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Assert that value equals URL",
+      "stepDescription" : "Assert that element By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\") equals URL",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='tKgS7w']//select[@class='Gn+jFg']\")",
       "value" : "URL"
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -914,9 +914,9 @@
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -956,9 +956,9 @@
       "value" : "isProductClicked"
     }, {
       "stepNumber" : 6,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -980,21 +980,21 @@
       "value" : "pincode"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Verify element By.xpath(\"//div[@class='hVvnXm']\") with condition: getExpectedText",
-      "actionType" : "verify",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
+      "actionType" : "navigate",
       "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
-      "value" : "getExpectedText"
+      "value" : null
     }, {
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1004,9 +1004,9 @@
     "description" : "This test case is for chechking product images",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"(//div[@class=\\\"zlQd20 _1eDlvI\\\"])[3]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1022,9 +1022,9 @@
       "value" : "isSeen"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -1034,9 +1034,9 @@
     "description" : "This test case is to Add Product to cart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1046,9 +1046,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1058,9 +1058,9 @@
     "description" : "This test case is to place order",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//span[text()=\\\"Place Order\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1076,9 +1076,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1088,9 +1088,9 @@
     "description" : "This test case is to sort product based on price",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1106,9 +1106,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/poco-m6-pro-5g-forest-green-128-gb/p/itm151f47ed48eee?pid=MOBGRNZ3FZBVRYHQ&lid=LSTMOBGRNZ3FZBVRYHQLWWUJH&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=79f53274-c019-4c1a-a4f6-9e03a2cd78ae.MOBGRNZ3FZBVRYHQ.SEARCH&ppt=browse&ppn=browse&ssid=uev4zhjuo00000001715699144542"
@@ -1124,9 +1124,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -1142,9 +1142,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -1160,9 +1160,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 2,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -1184,9 +1184,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
@@ -1204,13 +1204,13 @@
       "stepNumber" : 2,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 3,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1234,13 +1234,13 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1270,13 +1270,13 @@
       "stepNumber" : 4,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 5,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1286,9 +1286,9 @@
     "description" : "This test case is to check Grocery Store of Flipkart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"//a[text()=\\\"Grocery\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1312,13 +1312,13 @@
       "stepNumber" : 5,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 6,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_c2f9aa37-9ef0-47c9-85b8-e3fdc09a071f_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"
@@ -1328,9 +1328,9 @@
     "description" : "This test case is to check my Cart",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Click on element: By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "stepDescription" : "Click on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "click",
-      "elementSelector" : "By.xpath(\"//a[@href=\\\"/viewcart?exploreMode=true&preference=GROCERY\\\"][1]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1342,13 +1342,13 @@
       "stepNumber" : 3,
       "stepDescription" : "Assert that actualText.contains(expectedText) is true",
       "actionType" : "assert",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : "actualText.contains(expectedText)"
     }, {
       "stepNumber" : 4,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1358,9 +1358,9 @@
     "description" : "This test case is to check Flight Booking Section",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1412,9 +1412,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/travel/flights?otracker=nmenu_Flights"
@@ -1424,9 +1424,9 @@
     "description" : "This test case is for Register functionality",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1478,9 +1478,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 10,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/"
@@ -1490,9 +1490,9 @@
     "description" : "This test case is for Login Functionality",
     "steps" : [ {
       "stepNumber" : 1,
-      "stepDescription" : "Navigate on element: By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "stepDescription" : "Navigate on element: By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "actionType" : "navigate",
-      "elementSelector" : "By.xpath(\"//input[@type=\\\"text\\\"]\")",
+      "elementSelector" : "By.xpath(\"//button[@type=\\\"button\\\"]\")",
       "value" : null
     }, {
       "stepNumber" : 2,
@@ -1538,9 +1538,9 @@
       "value" : "isClicked"
     }, {
       "stepNumber" : 9,
-      "stepDescription" : "Navigate",
+      "stepDescription" : "Navigate on element: By.xpath(\"//div[@class='hVvnXm']\")",
       "actionType" : "navigate",
-      "elementSelector" : null,
+      "elementSelector" : "By.xpath(\"//div[@class='hVvnXm']\")",
       "value" : null
     } ],
     "testURL" : "https://www.flipkart.com/account/login?ret=/account/login%3Fsignup%3Dtrue%26ret%3D%2F"
